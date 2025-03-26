@@ -1,46 +1,34 @@
 import React from "react";
 import Grid from "./ProductGrid";
 import SelectedItems from "./SelectedItems";
-import SelectedItems2 from "./SelectedItems2";
 
-const SolarContainer = () => {
+const SolarContainerTwo = () => {
   return (
     <body class="bg-gray-100">
       {/* <!-- Outer Div --> */}
-      <div class="relative bg-blue-100 h-screen flex">
+      <div class="relative bg-blue-100 min-h-screen flex">
 
 
 
         {/* <!-- Left Column --> */}
 
-        <div class="bg-white w-2.5/12 h-90% fixed px-10 -ml-8 grid grid-rows-10 gap-2 overflow-none mb-8 border-red-400 border-4 mt-10" name="Left Column">
-          
+        <div class="bg-red-300 w-2.5/12 h-screen overflow-y-auto fixed">
           {/* <!-- Content for the left column --> */}
-          <div className="p-4 row-span-2 bg-sky-400 rounded-md">
+          <div class="p-4">
             <p>Left Column</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Scroll down to see more content.</p>
-            <p>Total Wattage</p>
             
-            
+            <SelectedItems/>
 
           </div>
-
-          <div
-            className="row-span-8 mb-3 overflow-hidden h-full"
-            style={{ maxHeight: 'calc(100vh - 250px)' }} // adjust as needed
-            name="list rack"
-          >
-               <SelectedItems/>
-          </div>
-
         </div>
 
         {/* <!-- Section --> */}
 
         <div
-          class="bg-white w-8/12 ml-auto p-40"
-          style={{ marginLeft: "17%" , marginRight: ""  }}
+          class="bg-green-300 w-7/12 ml-auto p-4"
+          style={{ marginLeft: "20.8%" , marginRight: ""  }}
         >
           <div class="p-4">
             <p>Section Content</p>
@@ -53,15 +41,13 @@ const SolarContainer = () => {
 
         {/* <!-- Right Column --> */}
 
-        <div class="bg-white w-2.5/12 h-screen overflow-hidden fixed right-0 pl-10">
+        <div class="bg-yellow-300 w-2.5/12 h-screen overflow-y-auto fixed right-0 ">
           {/* <!-- Content for the right column --> */}
-          <div class="p-4 mt-8">
+          <div class="p-4">
             <p>Right Column</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Scroll down to see more content.</p>
-            
-            <SelectedItems2/>
-
+            {/* <!-- Add more content here to enable scrolling --> */}
           </div>
         </div>
       </div>
@@ -69,4 +55,4 @@ const SolarContainer = () => {
   );
 };
 
-export default SolarContainer;
+export default SolarContainerTwo;

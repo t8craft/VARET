@@ -22,15 +22,31 @@ function Home() {
                   </Link>
                 </li>
         
-                {/* <li>
-                  <Link to="container">
+                <li>
+                  <Link to="selecteddItems">
                     <p className="text-green-800 text-2xl mr-3 font-mulish">
-                      Container
+                      Selected Items
+                    </p>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="newcard">
+                    <p className="text-green-800 text-2xl mr-3 font-mulish">
+                      New Card
+                    </p>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="casing">
+                    <p className="text-green-800 text-2xl mr-3 font-mulish">
+                      Casing
                     </p>
                   </Link>
                 </li>
         
-                <li>
+                {/* <li>
                   <Link to="Modal">
                     <p className="text-green-800 text-2xl mr-3 font-mulish">Modal</p>
                   </Link>
@@ -120,8 +136,8 @@ function Home() {
                       Solar Container
                     </p>
                   </Link>
-                </li> */}
-        
+                </li>
+         */}
         
               </ul>
             </div>
