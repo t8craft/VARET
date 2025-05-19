@@ -11,6 +11,10 @@ import UserLogin from './Forms/User/BasicLogin';
 import LandingPage from './pages/LandingPage';
 import SocialLoginWithRedirect from './Forms/User/SocialLoginWithRedirect';
 import CombinedLogin from './Forms/User/CombinedLogin';
+import CreateArea from './Forms/Area/Create';
+import CreateSection from './Forms/Section/Create';
+import UploadImageForm from './Forms/Image/Create';
+import ScrapperForm from './Forms/Scrapper/Scrap';
 
 function App() {
     return (
@@ -24,8 +28,12 @@ function App() {
                 <Route path="/login_user" element={<UserLogin />} />
                 <Route path="/landing_page" element={<LandingPage />} />
                 <Route path="/social_only" element={<SocialLoginWithRedirect />} />
-
                 <Route path="/combined_login" element={<CombinedLogin />} />
+                <Route path="/area_create" element={<CreateArea />} />
+                <Route path="/section_create" element={<CreateSection />} />
+                <Route path="/image_create" element={<UploadImageForm />} />
+                <Route path="/scrap" element={<ScrapperForm />} />
+                {/* Add more routes as needed */}
                 
 
             </Routes>

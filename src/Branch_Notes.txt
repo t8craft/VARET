@@ -1,0 +1,16 @@
+The backend for this code is the 
+https://github.com/t8craft/DRUME/tree/al_JWT_Social_Logins
+
+*Home Page*
+Go to About Page
+Login (Social Login)
+New Employee
+Landing_Page
+LoginEmployee
+Login User (No Social)
+Social Only
+Combined Login
+Create Area
+Create Section
+Upload Image
+Scrap Images
