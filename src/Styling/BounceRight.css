@@ -1,0 +1,12 @@
+@keyframes bounce-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.bounce-right {
+  animation: bounce-right 0.5s ease-in-out;
+}
